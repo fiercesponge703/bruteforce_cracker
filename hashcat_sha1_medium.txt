@@ -1,0 +1,77 @@
+﻿hashcat (v7.1.2) starting
+
+Initializing bridges. Please be patient...Initialized bridgesInitializing backend runtimes. Please be patient...Initialized backend runtimesInitializing backend devices. Please be patient...Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             For more information, see: https://hashcat.net/faq/wrongdriver
+             Falling back to OpenCL runtime.
+
+If you are using WSL2 you can use CUDA instead of OpenCL.
+Users must not install any NVIDIA GPU Linux driver within WSL 2
+For all details: https://docs.nvidia.com/cuda/wsl-user-guide/index.html
+
+TLDR; go to https://developer.nvidia.com/cuda-downloads and follow this path:
+  Linux -> Architecture -> Distribution -> Version -> deb (local)
+Follow the installation Instructions on the website.
+
+Initialized backend devicesOpenCL API (OpenCL 3.0 CUDA 13.1.86) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #01: NVIDIA GeForce RTX 3060 Ti, 8191/8191 MB (2047 MB allocatable), 38MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in C:\Users\fierce_sponge\Desktop\bruteforce_cracker\sha1_medium.txt. Please be patient...Counted lines in C:\Users\fierce_sponge\Desktop\bruteforce_cracker\sha1_medium.txtParsed Hashes: 1/1 (100.00%)Parsed Hashes: 1/1 (100.00%)Sorting hashes. Please be patient...Sorted hashesRemoving duplicate hashes. Please be patient...Removed duplicate hashesSorting salts. Please be patient...Sorted saltsGenerating bitmap tables...Generated bitmap tablesHashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Brute-Force
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing bridge salts. Please be patient...Initialized bridge saltsInitializing device kernels and memory. Please be patient...Initializing backend runtime for device #1. Please be patient...Initialized backend runtime for device #1Host memory allocated for this attack: 1064 MB (7795 MB free)
+
+Initialized device kernels and memoryStarting self-test. Please be patient...Finished self-testStarting autotune. Please be patient...Finished autotune
+                                                          
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: d0be2dc421be4fcd0172e5afceea3970e2f3d940
+Time.Started.....: Mon Dec 08 20:15:05 2025 (1 sec)
+Time.Estimated...: Mon Dec 08 20:15:06 2025 (0 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1 [6]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6760.1 MH/s (5.19ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2176782336/2176782336 (100.00%)
+Rejected.........: 0/2176782336 (0.00%)
+Restore.Point....: 1679616/1679616 (100.00%)
+Restore.Sub.#01..: Salt:0 Amplifier:1024-1296 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: g8cheq -> x8qfqx
+Hardware.Mon.#01.: Temp: 63c Fan: 56% Util: 96% Core:1920MHz Mem:6801MHz Bus:16
+Started: Mon Dec 08 20:15:03 2025
+Stopped: Mon Dec 08 20:15:06 2025

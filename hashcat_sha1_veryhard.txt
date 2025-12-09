@@ -1,0 +1,1879 @@
+﻿hashcat (v7.1.2) starting
+
+Initializing bridges. Please be patient...Initialized bridgesInitializing backend runtimes. Please be patient...Initialized backend runtimesInitializing backend devices. Please be patient...Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             For more information, see: https://hashcat.net/faq/wrongdriver
+             Falling back to OpenCL runtime.
+
+If you are using WSL2 you can use CUDA instead of OpenCL.
+Users must not install any NVIDIA GPU Linux driver within WSL 2
+For all details: https://docs.nvidia.com/cuda/wsl-user-guide/index.html
+
+TLDR; go to https://developer.nvidia.com/cuda-downloads and follow this path:
+  Linux -> Architecture -> Distribution -> Version -> deb (local)
+Follow the installation Instructions on the website.
+
+Initialized backend devicesOpenCL API (OpenCL 3.0 CUDA 13.1.86) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #01: NVIDIA GeForce RTX 3060 Ti, 8191/8191 MB (2047 MB allocatable), 38MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in C:\Users\fierce_sponge\Desktop\bruteforce_cracker\sha1_veryhard.txt. Please be patient...Counted lines in C:\Users\fierce_sponge\Desktop\bruteforce_cracker\sha1_veryhard.txtParsed Hashes: 1/1 (100.00%)Parsed Hashes: 1/1 (100.00%)Sorting hashes. Please be patient...Sorted hashesRemoving duplicate hashes. Please be patient...Removed duplicate hashesSorting salts. Please be patient...Sorted saltsGenerating bitmap tables...Generated bitmap tablesHashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Brute-Force
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing bridge salts. Please be patient...Initialized bridge saltsInitializing device kernels and memory. Please be patient...Initializing backend runtime for device #1. Please be patient...Initialized backend runtime for device #1Host memory allocated for this attack: 1064 MB (7766 MB free)
+
+Initialized device kernels and memoryStarting self-test. Please be patient...Finished self-testStarting autotune. Please be patient...Finished autotune
+                                                          
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 secs)
+Time.Estimated...: Mon Dec 08 20:22:16 2025 (6 mins, 49 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6814.3 MH/s (8.41ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 31569149952/2821109907456 (1.12%)
+Rejected.........: 0/31569149952 (0.00%)
+Restore.Point....: 642048/60466176 (1.06%)
+Restore.Sub.#01..: Salt:0 Amplifier:27648-28672 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sn15c5ss -> hiuqda00
+Hardware.Mon.#01.: Temp: 69c Fan: 50% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (9 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (6 mins, 42 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6843.0 MH/s (8.43ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 66253750272/2821109907456 (2.35%)
+Rejected.........: 0/66253750272 (0.00%)
+Restore.Point....: 1400832/60466176 (2.32%)
+Restore.Sub.#01..: Salt:0 Amplifier:15360-16384 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vzle69wa -> cvpkvbwa
+Hardware.Mon.#01.: Temp: 70c Fan: 50% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+Cracking performance lower than expected?
+
+* Append -O to the commandline.
+  This lowers the maximum supported password/salt length (usually down to 32).
+
+* Append -w 3 to the commandline.
+  This can cause your screen to lag.
+
+* Append -S to the commandline.
+  This has a drastic speed impact but can be better for specific attacks.
+  Typical scenarios are a small wordlist but a large ruleset.
+
+* Update your backend API runtime / driver the right way:
+  https://hashcat.net/faq/wrongdriver
+
+* Create more work items to make use of your parallelization power:
+  https://hashcat.net/faq/morework
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (15 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (6 mins, 36 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6856.3 MH/s (8.45ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 101057888256/2821109907456 (3.58%)
+Rejected.........: 0/101057888256 (0.00%)
+Restore.Point....: 2159616/60466176 (3.57%)
+Restore.Sub.#01..: Salt:0 Amplifier:5120-6144 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: lzudm1ar -> 9fib3sul
+Hardware.Mon.#01.: Temp: 70c Fan: 51% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (20 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (6 mins, 31 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6863.4 MH/s (8.47ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 135828406272/2821109907456 (4.81%)
+Rejected.........: 0/135828406272 (0.00%)
+Restore.Point....: 2860032/60466176 (4.73%)
+Restore.Sub.#01..: Salt:0 Amplifier:40960-41984 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: 8i9d8a89 -> pjyb7rgi
+Hardware.Mon.#01.: Temp: 71c Fan: 52% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (25 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (6 mins, 26 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6860.2 MH/s (8.44ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 170453237760/2821109907456 (6.04%)
+Rejected.........: 0/170453237760 (0.00%)
+Restore.Point....: 3618816/60466176 (5.98%)
+Restore.Sub.#01..: Salt:0 Amplifier:27648-28672 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sn15awng -> hiuq3ice
+Hardware.Mon.#01.: Temp: 71c Fan: 54% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (30 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (6 mins, 21 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6854.7 MH/s (8.42ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 204958531584/2821109907456 (7.27%)
+Rejected.........: 0/204958531584 (0.00%)
+Restore.Point....: 4377600/60466176 (7.24%)
+Restore.Sub.#01..: Salt:0 Amplifier:12288-13312 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: rtlexg79 -> ok1k61ga
+Hardware.Mon.#01.: Temp: 72c Fan: 55% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (35 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (6 mins, 16 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6851.2 MH/s (8.47ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 239430205440/2821109907456 (8.49%)
+Rejected.........: 0/239430205440 (0.00%)
+Restore.Point....: 5078016/60466176 (8.40%)
+Restore.Sub.#01..: Salt:0 Amplifier:43008-44032 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vhxeb671 -> cq8kura1
+Hardware.Mon.#01.: Temp: 72c Fan: 56% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (40 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (6 mins, 10 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6870.5 MH/s (8.43ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 274174574592/2821109907456 (9.72%)
+Rejected.........: 0/274174574592 (0.00%)
+Restore.Point....: 5836800/60466176 (9.65%)
+Restore.Sub.#01..: Salt:0 Amplifier:31744-32768 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: 8cydzzhi -> p0ubgn91
+Hardware.Mon.#01.: Temp: 72c Fan: 57% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (45 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (6 mins, 5 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6868.7 MH/s (8.45ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 308859174912/2821109907456 (10.95%)
+Rejected.........: 0/308859174912 (0.00%)
+Restore.Point....: 6595584/60466176 (10.91%)
+Restore.Sub.#01..: Salt:0 Amplifier:19456-20480 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: gag53lwi -> 6nrqtgxi
+Hardware.Mon.#01.: Temp: 72c Fan: 58% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (50 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (6 mins, 1 sec)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6859.4 MH/s (8.45ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 343424237568/2821109907456 (12.17%)
+Rejected.........: 0/343424237568 (0.00%)
+Restore.Point....: 7354368/60466176 (12.16%)
+Restore.Sub.#01..: Salt:0 Amplifier:5120-6144 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: lzuehcyo -> 9fik4opl
+Hardware.Mon.#01.: Temp: 72c Fan: 58% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (55 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (5 mins, 56 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6857.3 MH/s (8.45ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 378134986752/2821109907456 (13.40%)
+Rejected.........: 0/378134986752 (0.00%)
+Restore.Point....: 8054784/60466176 (13.32%)
+Restore.Sub.#01..: Salt:0 Amplifier:38912-39936 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: za3etwd1 -> tf8ko6qa
+Hardware.Mon.#01.: Temp: 72c Fan: 58% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 0 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (5 mins, 51 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6852.8 MH/s (8.43ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 412640280576/2821109907456 (14.63%)
+Rejected.........: 0/412640280576 (0.00%)
+Restore.Point....: 8813568/60466176 (14.58%)
+Restore.Sub.#01..: Salt:0 Amplifier:24576-25600 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vxddwz25 -> c4bbjrtt
+Hardware.Mon.#01.: Temp: 72c Fan: 59% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 5 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (5 mins, 46 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6858.8 MH/s (8.44ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 447444418560/2821109907456 (15.86%)
+Rejected.........: 0/447444418560 (0.00%)
+Restore.Point....: 9572352/60466176 (15.83%)
+Restore.Sub.#01..: Salt:0 Amplifier:14336-15360 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: lav502ps -> 9yoqqh54
+Hardware.Mon.#01.: Temp: 72c Fan: 59% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 10 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (5 mins, 40 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6860.5 MH/s (8.44ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 482129018880/2821109907456 (17.09%)
+Rejected.........: 0/482129018880 (0.00%)
+Restore.Point....: 10331136/60466176 (17.09%)
+Restore.Sub.#01..: Salt:0 Amplifier:2048-3072 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: zbaegt15 -> tjekdprs
+Hardware.Mon.#01.: Temp: 72c Fan: 59% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 15 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (5 mins, 35 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6875.1 MH/s (8.46ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 516899536896/2821109907456 (18.32%)
+Rejected.........: 0/516899536896 (0.00%)
+Restore.Point....: 11031552/60466176 (18.24%)
+Restore.Sub.#01..: Salt:0 Amplifier:37888-38912 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: gw8er2gu -> 65ykiycu
+Hardware.Mon.#01.: Temp: 72c Fan: 59% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 20 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (5 mins, 30 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6868.3 MH/s (8.42ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 551584137216/2821109907456 (19.55%)
+Rejected.........: 0/551584137216 (0.00%)
+Restore.Point....: 11790336/60466176 (19.50%)
+Restore.Sub.#01..: Salt:0 Amplifier:25600-26624 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: b5rd2pov -> ipkbzqov
+Hardware.Mon.#01.: Temp: 72c Fan: 59% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 25 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (5 mins, 25 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6857.0 MH/s (8.43ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 586089431040/2821109907456 (20.78%)
+Rejected.........: 0/586089431040 (0.00%)
+Restore.Point....: 12549120/60466176 (20.75%)
+Restore.Sub.#01..: Salt:0 Amplifier:10240-11264 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: g675zq81 -> 6edqx2j1
+Hardware.Mon.#01.: Temp: 72c Fan: 60% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 30 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (5 mins, 20 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6861.6 MH/s (8.47ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 620800180224/2821109907456 (22.01%)
+Rejected.........: 0/620800180224 (0.00%)
+Restore.Point....: 13249536/60466176 (21.91%)
+Restore.Sub.#01..: Salt:0 Amplifier:45056-46080 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: e0z5cqfr -> xdqqduw2
+Hardware.Mon.#01.: Temp: 72c Fan: 59% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 35 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (5 mins, 15 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6862.1 MH/s (8.44ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 655484780544/2821109907456 (23.23%)
+Rejected.........: 0/655484780544 (0.00%)
+Restore.Point....: 14008320/60466176 (23.17%)
+Restore.Sub.#01..: Salt:0 Amplifier:32768-33792 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: l1oe68so -> 91kkvdlu
+Hardware.Mon.#01.: Temp: 72c Fan: 60% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 40 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (5 mins, 10 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6863.4 MH/s (8.44ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 690229149696/2821109907456 (24.47%)
+Rejected.........: 0/690229149696 (0.00%)
+Restore.Point....: 14767104/60466176 (24.42%)
+Restore.Sub.#01..: Salt:0 Amplifier:21504-22528 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: r3ddmtwh -> obgb3fjj
+Hardware.Mon.#01.: Temp: 72c Fan: 60% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 46 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (5 mins, 5 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6865.3 MH/s (8.42ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 725033287680/2821109907456 (25.70%)
+Rejected.........: 0/725033287680 (0.00%)
+Restore.Point....: 15525888/60466176 (25.68%)
+Restore.Sub.#01..: Salt:0 Amplifier:10240-11264 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: g675o939 -> 6edqjab1
+Hardware.Mon.#01.: Temp: 72c Fan: 60% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 51 secs)
+Time.Estimated...: Mon Dec 08 20:22:15 2025 (5 mins, 1 sec)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6835.5 MH/s (8.46ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 759445192704/2821109907456 (26.92%)
+Rejected.........: 0/759445192704 (0.00%)
+Restore.Point....: 16226304/60466176 (26.84%)
+Restore.Sub.#01..: Salt:0 Amplifier:40960-41984 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: 8i95a8im -> pjyq31fc
+Hardware.Mon.#01.: Temp: 72c Fan: 60% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (1 min, 56 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (4 mins, 55 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6858.4 MH/s (8.44ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 794249330688/2821109907456 (28.15%)
+Rejected.........: 0/794249330688 (0.00%)
+Restore.Point....: 16985088/60466176 (28.09%)
+Restore.Sub.#01..: Salt:0 Amplifier:30720-31744 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: rwgexyac -> ozjk6as0
+Hardware.Mon.#01.: Temp: 72c Fan: 60% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 1 sec)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (4 mins, 50 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6866.7 MH/s (8.43ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 829053468672/2821109907456 (29.39%)
+Rejected.........: 0/829053468672 (0.00%)
+Restore.Point....: 17743872/60466176 (29.35%)
+Restore.Sub.#01..: Salt:0 Amplifier:20480-21504 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: z9bdug8a -> tgcbswmu
+Hardware.Mon.#01.: Temp: 72c Fan: 60% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 6 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (4 mins, 44 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6871.4 MH/s (8.45ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 863857606656/2821109907456 (30.62%)
+Rejected.........: 0/863857606656 (0.00%)
+Restore.Point....: 18502656/60466176 (30.60%)
+Restore.Sub.#01..: Salt:0 Amplifier:10240-11264 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: g675hpom -> 6edq7iev
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 11 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (4 mins, 39 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6868.8 MH/s (8.47ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 898568355840/2821109907456 (31.85%)
+Rejected.........: 0/898568355840 (0.00%)
+Restore.Point....: 19203072/60466176 (31.76%)
+Restore.Sub.#01..: Salt:0 Amplifier:45056-46080 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: e0z53b3a -> xdqqt9l0
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 16 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (4 mins, 34 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6869.9 MH/s (8.46ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 933312724992/2821109907456 (33.08%)
+Rejected.........: 0/933312724992 (0.00%)
+Restore.Point....: 19961856/60466176 (33.01%)
+Restore.Sub.#01..: Salt:0 Amplifier:33792-34816 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: ve1eh5om -> c6ik42vm
+Hardware.Mon.#01.: Temp: 73c Fan: 61% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 21 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (4 mins, 29 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6872.9 MH/s (8.41ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 968176631808/2821109907456 (34.32%)
+Rejected.........: 0/968176631808 (0.00%)
+Restore.Point....: 20720640/60466176 (34.27%)
+Restore.Sub.#01..: Salt:0 Amplifier:24576-25600 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vxddrtua -> c4bbubcs
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 26 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (4 mins, 25 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6847.3 MH/s (8.44ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1002801463296/2821109907456 (35.55%)
+Rejected.........: 0/1002801463296 (0.00%)
+Restore.Point....: 21479424/60466176 (35.52%)
+Restore.Sub.#01..: Salt:0 Amplifier:11264-12288 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: z375e2og -> tnlq9i3s
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 31 secs)
+Time.Estimated...: Mon Dec 08 20:22:14 2025 (4 mins, 20 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6835.3 MH/s (8.45ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1037332905984/2821109907456 (36.77%)
+Rejected.........: 0/1037332905984 (0.00%)
+Restore.Point....: 22179840/60466176 (36.68%)
+Restore.Sub.#01..: Salt:0 Amplifier:43008-44032 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vhx50sig -> cq8qqldg
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 36 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (4 mins, 14 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6867.9 MH/s (8.29ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1072316350464/2821109907456 (38.01%)
+Rejected.........: 0/1072316350464 (0.00%)
+Restore.Point....: 22938624/60466176 (37.94%)
+Restore.Sub.#01..: Salt:0 Amplifier:35840-36864 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: ehvegf9b -> xr4kd6gl
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 41 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (4 mins, 8 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6904.2 MH/s (8.31ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1107777945600/2821109907456 (39.27%)
+Rejected.........: 0/1107777945600 (0.00%)
+Restore.Point....: 23697408/60466176 (39.19%)
+Restore.Sub.#01..: Salt:0 Amplifier:36864-37888 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sqfda51b -> hsqbat1b
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 46 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (4 mins, 2 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6925.2 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1143239540736/2821109907456 (40.52%)
+Rejected.........: 0/1143239540736 (0.00%)
+Restore.Point....: 24456192/60466176 (40.45%)
+Restore.Sub.#01..: Salt:0 Amplifier:37888-38912 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: gw85ld9j -> 65yqlbjd
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 51 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (3 mins, 56 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6937.8 MH/s (8.30ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1178641367040/2821109907456 (41.78%)
+Rejected.........: 0/1178641367040 (0.00%)
+Restore.Point....: 25214976/60466176 (41.70%)
+Restore.Sub.#01..: Salt:0 Amplifier:37888-38912 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: gw8er23t -> 65ykiyow
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (2 mins, 56 secs)
+Time.Estimated...: Mon Dec 08 20:22:06 2025 (3 mins, 47 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  7049.1 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1214554963968/2821109907456 (43.05%)
+Rejected.........: 0/1214554963968 (0.00%)
+Restore.Point....: 26032128/60466176 (43.05%)
+Restore.Sub.#01..: Salt:0 Amplifier:0-1024 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sar5lq9t -> hveql1jb
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 1 sec)
+Time.Estimated...: Mon Dec 08 20:22:07 2025 (3 mins, 43 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  7027.1 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1250016559104/2821109907456 (44.31%)
+Rejected.........: 0/1250016559104 (0.00%)
+Restore.Point....: 26790912/60466176 (44.31%)
+Restore.Sub.#01..: Salt:0 Amplifier:1024-2048 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: g80eryvz -> 6jokizq4
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 6 secs)
+Time.Estimated...: Mon Dec 08 20:22:07 2025 (3 mins, 38 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  7029.7 MH/s (8.26ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1285537923072/2821109907456 (45.57%)
+Rejected.........: 0/1285537923072 (0.00%)
+Restore.Point....: 27549696/60466176 (45.56%)
+Restore.Sub.#01..: Salt:0 Amplifier:3072-4096 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: r11d2c2c -> omebzd3b
+Hardware.Mon.#01.: Temp: 72c Fan: 61% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 11 secs)
+Time.Estimated...: Mon Dec 08 20:22:08 2025 (3 mins, 34 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6999.2 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1320607285248/2821109907456 (46.81%)
+Rejected.........: 0/1320607285248 (0.00%)
+Restore.Point....: 28250112/60466176 (46.72%)
+Restore.Sub.#01..: Salt:0 Amplifier:44032-45056 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: bq8dvdk3 -> iqvbx5v0
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 17 secs)
+Time.Estimated...: Mon Dec 08 20:22:09 2025 (3 mins, 29 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6979.8 MH/s (8.29ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1355590729728/2821109907456 (48.05%)
+Rejected.........: 0/1355590729728 (0.00%)
+Restore.Point....: 29008896/60466176 (47.98%)
+Restore.Sub.#01..: Salt:0 Amplifier:36864-37888 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sqf5c57t -> hsqqdah9
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 22 secs)
+Time.Estimated...: Mon Dec 08 20:22:09 2025 (3 mins, 24 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6980.2 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1390932787200/2821109907456 (49.30%)
+Rejected.........: 0/1390932787200 (0.00%)
+Restore.Point....: 29767680/60466176 (49.23%)
+Restore.Sub.#01..: Salt:0 Amplifier:35840-36864 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: ehve69iz -> xr4kvb6j
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 27 secs)
+Time.Estimated...: Mon Dec 08 20:22:09 2025 (3 mins, 19 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6981.0 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1426215075840/2821109907456 (50.56%)
+Rejected.........: 0/1426215075840 (0.00%)
+Restore.Point....: 30526464/60466176 (50.49%)
+Restore.Sub.#01..: Salt:0 Amplifier:33792-34816 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: ve1dm18r -> c6ib3sib
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 32 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (3 mins, 15 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6966.1 MH/s (8.29ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1461557133312/2821109907456 (51.81%)
+Rejected.........: 0/1461557133312 (0.00%)
+Restore.Point....: 31285248/60466176 (51.74%)
+Restore.Sub.#01..: Salt:0 Amplifier:32768-33792 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: l1o5ofkn -> 91kqjyr3
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 37 secs)
+Time.Estimated...: Mon Dec 08 20:22:09 2025 (3 mins, 9 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6983.3 MH/s (8.31ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1496899190784/2821109907456 (53.06%)
+Rejected.........: 0/1496899190784 (0.00%)
+Restore.Point....: 32044032/60466176 (52.99%)
+Restore.Sub.#01..: Salt:0 Amplifier:31744-32768 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: 8cye2un9 -> p0uk060d
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 42 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (3 mins, 5 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6954.1 MH/s (8.53ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1531882635264/2821109907456 (54.30%)
+Rejected.........: 0/1531882635264 (0.00%)
+Restore.Point....: 32802816/60466176 (54.25%)
+Restore.Sub.#01..: Salt:0 Amplifier:24576-25600 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vxdd87kr -> c4bb7m6l
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 99% Core:1905MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 47 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (3 mins, 1 sec)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6926.8 MH/s (8.26ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1566627004416/2821109907456 (55.53%)
+Rejected.........: 0/1566627004416 (0.00%)
+Restore.Point....: 33561600/60466176 (55.50%)
+Restore.Sub.#01..: Salt:0 Amplifier:13312-14336 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: 83l5aiwt -> pivq3beg
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 52 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (2 mins, 56 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6925.7 MH/s (8.29ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1601610448896/2821109907456 (56.77%)
+Rejected.........: 0/1601610448896 (0.00%)
+Restore.Point....: 34320384/60466176 (56.76%)
+Restore.Sub.#01..: Salt:0 Amplifier:6144-7168 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vfiex9c4 -> cppk6x6k
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (3 mins, 57 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (2 mins, 50 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6928.7 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1636713431040/2821109907456 (58.02%)
+Rejected.........: 0/1636713431040 (0.00%)
+Restore.Point....: 35079168/60466176 (58.01%)
+Restore.Sub.#01..: Salt:0 Amplifier:1024-2048 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: g80du9vp -> 6jobssxz
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 2 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (2 mins, 45 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6931.7 MH/s (8.30ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1671842562048/2821109907456 (59.26%)
+Rejected.........: 0/1671842562048 (0.00%)
+Restore.Point....: 35779584/60466176 (59.17%)
+Restore.Sub.#01..: Salt:0 Amplifier:43008-44032 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vhxdzps5 -> cq8bgocg
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 7 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (2 mins, 40 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6955.5 MH/s (8.30ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1707005313024/2821109907456 (60.51%)
+Rejected.........: 0/1707005313024 (0.00%)
+Restore.Point....: 36538368/60466176 (60.43%)
+Restore.Sub.#01..: Salt:0 Amplifier:38912-39936 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: za3536yf -> tf8qtcgn
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 12 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (2 mins, 36 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6913.0 MH/s (8.26ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1741928988672/2821109907456 (61.75%)
+Rejected.........: 0/1741928988672 (0.00%)
+Restore.Point....: 37297152/60466176 (61.68%)
+Restore.Sub.#01..: Salt:0 Amplifier:30720-31744 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: rwgehrlb -> ozjk4b1j
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 17 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (2 mins, 31 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6894.2 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1776673357824/2821109907456 (62.98%)
+Rejected.........: 0/1776673357824 (0.00%)
+Restore.Point....: 38055936/60466176 (62.94%)
+Restore.Sub.#01..: Salt:0 Amplifier:19456-20480 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: gagdr9pk -> 6nrbu6g6
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 22 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (2 mins, 26 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6888.2 MH/s (8.25ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1811357958144/2821109907456 (64.21%)
+Rejected.........: 0/1811357958144 (0.00%)
+Restore.Point....: 38814720/60466176 (64.19%)
+Restore.Sub.#01..: Salt:0 Amplifier:7168-8192 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: bno5e61f -> iumq944k
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 27 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (2 mins, 21 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6901.6 MH/s (8.25ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1846460940288/2821109907456 (65.45%)
+Rejected.........: 0/1846460940288 (0.00%)
+Restore.Point....: 39573504/60466176 (65.45%)
+Restore.Sub.#01..: Salt:0 Amplifier:2048-3072 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: zbaett4k -> tjekokcp
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 32 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (2 mins, 16 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6904.9 MH/s (8.29ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1881410764800/2821109907456 (66.69%)
+Rejected.........: 0/1881410764800 (0.00%)
+Restore.Point....: 40273920/60466176 (66.61%)
+Restore.Sub.#01..: Salt:0 Amplifier:40960-41984 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: 8i9egyq3 -> pjykdca8
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 37 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (2 mins, 10 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6906.8 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1916453978112/2821109907456 (67.93%)
+Rejected.........: 0/1916453978112 (0.00%)
+Restore.Point....: 41032704/60466176 (67.86%)
+Restore.Sub.#01..: Salt:0 Amplifier:34816-35840 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: b8kdaa0j -> ij9ba3nz
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 43 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (2 mins, 5 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6934.5 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1951437422592/2821109907456 (69.17%)
+Rejected.........: 0/1951437422592 (0.00%)
+Restore.Point....: 41791488/60466176 (69.12%)
+Restore.Sub.#01..: Salt:0 Amplifier:27648-28672 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sn15lhwm -> hiuqlxvj
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 48 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 59 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6956.0 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 1986600173568/2821109907456 (70.42%)
+Rejected.........: 0/1986600173568 (0.00%)
+Restore.Point....: 42550272/60466176 (70.37%)
+Restore.Sub.#01..: Salt:0 Amplifier:23552-24576 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: llkera2p -> 9z2kidlz
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 53 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (1 min, 55 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6948.7 MH/s (8.25ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2021643386880/2821109907456 (71.66%)
+Rejected.........: 0/2021643386880 (0.00%)
+Restore.Point....: 43309056/60466176 (71.63%)
+Restore.Sub.#01..: Salt:0 Amplifier:17408-18432 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: egsd29oi -> xygbz4iy
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (4 mins, 58 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (1 min, 50 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6947.3 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2056746369024/2821109907456 (72.91%)
+Rejected.........: 0/2056746369024 (0.00%)
+Restore.Point....: 44067840/60466176 (72.88%)
+Restore.Sub.#01..: Salt:0 Amplifier:12288-13312 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: rtl5z48f -> ok1qxnnl
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 3 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 44 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6948.0 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2091909120000/2821109907456 (74.15%)
+Rejected.........: 0/2091909120000 (0.00%)
+Restore.Point....: 44826624/60466176 (74.14%)
+Restore.Sub.#01..: Salt:0 Amplifier:8192-9216 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: eitev9gz -> xomkpo9p
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 8 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 39 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6954.8 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2127191408640/2821109907456 (75.40%)
+Rejected.........: 0/2127191408640 (0.00%)
+Restore.Point....: 45585408/60466176 (75.39%)
+Restore.Sub.#01..: Salt:0 Amplifier:6144-7168 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vfidvisg -> cppbxttw
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 13 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 34 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6949.8 MH/s (8.26ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2162234621952/2821109907456 (76.64%)
+Rejected.........: 0/2162234621952 (0.00%)
+Restore.Point....: 46344192/60466176 (76.64%)
+Restore.Sub.#01..: Salt:0 Amplifier:0-1024 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sar5ct9g -> hveqdwc7
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 18 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 29 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6990.5 MH/s (8.29ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2197244215296/2821109907456 (77.89%)
+Rejected.........: 0/2197244215296 (0.00%)
+Restore.Point....: 47044608/60466176 (77.80%)
+Restore.Sub.#01..: Salt:0 Amplifier:39936-40960 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: r7w5oveo -> ogvqj01w
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 23 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 24 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6996.0 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2232646041600/2821109907456 (79.14%)
+Rejected.........: 0/2232646041600 (0.00%)
+Restore.Point....: 47803392/60466176 (79.06%)
+Restore.Sub.#01..: Salt:0 Amplifier:39936-40960 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: r7we2gb8 -> ogvk0y4p
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 28 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 19 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6990.3 MH/s (8.33ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2267868561408/2821109907456 (80.39%)
+Rejected.........: 0/2267868561408 (0.00%)
+Restore.Point....: 48562176/60466176 (80.31%)
+Restore.Sub.#01..: Salt:0 Amplifier:36864-37888 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sqfd8ozg -> hsqb71qg
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 33 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 14 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6972.8 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2302911774720/2821109907456 (81.63%)
+Rejected.........: 0/2302911774720 (0.00%)
+Restore.Point....: 49320960/60466176 (81.57%)
+Restore.Sub.#01..: Salt:0 Amplifier:30720-31744 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: rwg5amcv -> ozjq3lkz
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 38 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 9 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6962.3 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2337954988032/2821109907456 (82.87%)
+Rejected.........: 0/2337954988032 (0.00%)
+Restore.Point....: 50079744/60466176 (82.82%)
+Restore.Sub.#01..: Salt:0 Amplifier:24576-25600 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: vxdexu3x -> c4bk6pfj
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 43 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (1 min, 4 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6956.0 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2372938432512/2821109907456 (84.11%)
+Rejected.........: 0/2372938432512 (0.00%)
+Restore.Point....: 50838528/60466176 (84.08%)
+Restore.Sub.#01..: Salt:0 Amplifier:17408-18432 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: egsduxzj -> xygbsj2y
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 48 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (59 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6954.0 MH/s (8.25ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2408041414656/2821109907456 (85.36%)
+Rejected.........: 0/2408041414656 (0.00%)
+Restore.Point....: 51597312/60466176 (85.33%)
+Restore.Sub.#01..: Salt:0 Amplifier:12288-13312 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: rtl5hvjy -> ok1q72fp
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 53 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (54 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6940.1 MH/s (8.27ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2443144396800/2821109907456 (86.60%)
+Rejected.........: 0/2443144396800 (0.00%)
+Restore.Point....: 52356096/60466176 (86.59%)
+Restore.Sub.#01..: Salt:0 Amplifier:7168-8192 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: bnoebl1y -> iumkuvrv
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (5 mins, 58 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (49 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6939.1 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2478187610112/2821109907456 (87.84%)
+Rejected.........: 0/2478187610112 (0.00%)
+Restore.Point....: 53114880/60466176 (87.84%)
+Restore.Sub.#01..: Salt:0 Amplifier:1024-2048 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: g80dzs7i -> 6jobgpgk
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 3 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (44 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6938.0 MH/s (8.34ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2513256972288/2821109907456 (89.09%)
+Rejected.........: 0/2513256972288 (0.00%)
+Restore.Point....: 53815296/60466176 (89.00%)
+Restore.Sub.#01..: Salt:0 Amplifier:41984-43008 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: lpvdr20x -> 93ubuou9
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 8 secs)
+Time.Estimated...: Mon Dec 08 20:22:10 2025 (39 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6915.1 MH/s (8.53ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2547881803776/2821109907456 (90.31%)
+Rejected.........: 0/2547881803776 (0.00%)
+Restore.Point....: 54574080/60466176 (90.26%)
+Restore.Sub.#01..: Salt:0 Amplifier:28672-29696 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: giu5ezhv -> 6v3q9u2i
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 97% Core:1905MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 13 secs)
+Time.Estimated...: Mon Dec 08 20:22:11 2025 (35 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6825.8 MH/s (8.63ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2580799488000/2821109907456 (91.48%)
+Rejected.........: 0/2580799488000 (0.00%)
+Restore.Point....: 55274496/60466176 (91.41%)
+Restore.Sub.#01..: Salt:0 Amplifier:32768-33792 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: l1o50v5v -> 91kqqxj6
+Hardware.Mon.#01.: Temp: 72c Fan: 62% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 19 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (30 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6779.9 MH/s (8.56ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2614016016384/2821109907456 (92.66%)
+Rejected.........: 0/2614016016384 (0.00%)
+Restore.Point....: 55974912/60466176 (92.57%)
+Restore.Sub.#01..: Salt:0 Amplifier:41984-43008 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: lpv5lhrw -> 93uqlxcw
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 99% Core:1905MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 24 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (25 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6810.0 MH/s (8.28ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2649358073856/2821109907456 (93.91%)
+Rejected.........: 0/2649358073856 (0.00%)
+Restore.Point....: 56733696/60466176 (93.83%)
+Restore.Sub.#01..: Salt:0 Amplifier:40960-41984 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: 8i9erafx -> pjykidkx
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 29 secs)
+Time.Estimated...: Mon Dec 08 20:22:13 2025 (21 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6515.9 MH/s (8.37ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2683564523520/2821109907456 (95.12%)
+Rejected.........: 0/2683564523520 (0.00%)
+Restore.Point....: 57492480/60466176 (95.08%)
+Restore.Sub.#01..: Salt:0 Amplifier:20480-21504 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: z9bd293u -> tgcbz49u
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 99% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 34 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (15 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6737.6 MH/s (8.72ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2718189355008/2821109907456 (96.35%)
+Rejected.........: 0/2718189355008 (0.00%)
+Restore.Point....: 58251264/60466176 (96.34%)
+Restore.Sub.#01..: Salt:0 Amplifier:7168-8192 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: bno5z4nv -> iumqxn5u
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 99% Core:1905MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 39 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (10 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6672.9 MH/s (9.11ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2751465652224/2821109907456 (97.53%)
+Rejected.........: 0/2751465652224 (0.00%)
+Restore.Point....: 58951680/60466176 (97.50%)
+Restore.Sub.#01..: Salt:0 Amplifier:17408-18432 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: egs5cdi6 -> xygqd90q
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1905MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 44 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (5 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6601.0 MH/s (8.58ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2783964954624/2821109907456 (98.68%)
+Rejected.........: 0/2783964954624 (0.00%)
+Restore.Point....: 59652096/60466176 (98.65%)
+Restore.Sub.#01..: Salt:0 Amplifier:14336-15360 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: lav5of3q -> 9yoqjy5q
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 97% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 49 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (0 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6652.8 MH/s (8.48ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2818530017280/2821109907456 (99.91%)
+Rejected.........: 0/2818530017280 (0.00%)
+Restore.Point....: 60410880/60466176 (99.91%)
+Restore.Sub.#01..: Salt:0 Amplifier:0-1024 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sare2u5q -> hveqxqgx
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: 6e157c5da4410b7e9de85f5c93026b9176e69064
+Time.Started.....: Mon Dec 08 20:15:23 2025 (6 mins, 49 secs)
+Time.Estimated...: Mon Dec 08 20:22:12 2025 (0 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1?1 [8]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  6650.5 MH/s (8.45ms) @ Accel:3 Loops:1024 Thr:512 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 2821109907456/2821109907456 (100.00%)
+Rejected.........: 0/2821109907456 (0.00%)
+Restore.Point....: 60466176/60466176 (100.00%)
+Restore.Sub.#01..: Salt:0 Amplifier:46080-46656 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sdqe2u5q -> x8qqxqgx
+Hardware.Mon.#01.: Temp: 72c Fan: 63% Util: 98% Core:1905MHz Mem:6801MHz Bus:16
+Started: Mon Dec 08 20:15:21 2025
+Stopped: Mon Dec 08 20:22:14 2025

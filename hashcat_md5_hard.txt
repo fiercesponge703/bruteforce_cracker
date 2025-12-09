@@ -1,0 +1,99 @@
+﻿hashcat (v7.1.2) starting
+
+Initializing bridges. Please be patient...Initialized bridgesInitializing backend runtimes. Please be patient...Initialized backend runtimesInitializing backend devices. Please be patient...Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             For more information, see: https://hashcat.net/faq/wrongdriver
+             Falling back to OpenCL runtime.
+
+If you are using WSL2 you can use CUDA instead of OpenCL.
+Users must not install any NVIDIA GPU Linux driver within WSL 2
+For all details: https://docs.nvidia.com/cuda/wsl-user-guide/index.html
+
+TLDR; go to https://developer.nvidia.com/cuda-downloads and follow this path:
+  Linux -> Architecture -> Distribution -> Version -> deb (local)
+Follow the installation Instructions on the website.
+
+Initialized backend devicesOpenCL API (OpenCL 3.0 CUDA 13.1.86) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #01: NVIDIA GeForce RTX 3060 Ti, 8191/8191 MB (2047 MB allocatable), 38MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in C:\Users\fierce_sponge\Desktop\bruteforce_cracker\md5_hard.txt. Please be patient...Counted lines in C:\Users\fierce_sponge\Desktop\bruteforce_cracker\md5_hard.txtParsed Hashes: 1/1 (100.00%)Parsed Hashes: 1/1 (100.00%)Sorting hashes. Please be patient...Sorted hashesRemoving duplicate hashes. Please be patient...Removed duplicate hashesSorting salts. Please be patient...Sorted saltsGenerating bitmap tables...Generated bitmap tablesHashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Brute-Force
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing bridge salts. Please be patient...Initialized bridge saltsInitializing device kernels and memory. Please be patient...Initializing backend runtime for device #1. Please be patient...Initialized backend runtime for device #1Host memory allocated for this attack: 1064 MB (7696 MB free)
+
+Initialized device kernels and memoryStarting self-test. Please be patient...Finished self-testStarting autotune. Please be patient...Finished autotune
+                                                          
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 0 (MD5)
+Hash.Target......: 77892341aa9dc66e97f5c248782b5d92
+Time.Started.....: Mon Dec 08 20:11:17 2025 (4 secs)
+Time.Estimated...: Mon Dec 08 20:11:22 2025 (1 sec)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1 [7]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........: 13538.3 MH/s (9.98ms) @ Accel:14 Loops:1024 Thr:256 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 63184371712/78364164096 (80.63%)
+Rejected.........: 0/63184371712 (0.00%)
+Restore.Point....: 1225728/1679616 (72.98%)
+Restore.Sub.#01..: Salt:0 Amplifier:44032-45056 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: bq8exex -> iqvn63w
+Hardware.Mon.#01.: Temp: 73c Fan: 37% Util: 98% Core:1890MHz Mem:6801MHz Bus:16
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 0 (MD5)
+Hash.Target......: 77892341aa9dc66e97f5c248782b5d92
+Time.Started.....: Mon Dec 08 20:11:17 2025 (5 secs)
+Time.Estimated...: Mon Dec 08 20:11:22 2025 (0 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Mask.......: ?1?1?1?1?1?1?1 [7]
+Guess.Charset....: -1 0123456789abcdefghijklmnopqrstuvwxyz, -2 N/A, -3 N/A, -4 N/A, -5 N/A, -6 N/A, -7 N/A, -8 N/A 
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........: 13491.8 MH/s (7.67ms) @ Accel:14 Loops:1024 Thr:256 Vec:1
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 78364164096/78364164096 (100.00%)
+Rejected.........: 0/78364164096 (0.00%)
+Restore.Point....: 1679616/1679616 (100.00%)
+Restore.Sub.#01..: Salt:0 Amplifier:46080-46656 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#01...: sdqdarq -> x8qqxqg
+Hardware.Mon.#01.: Temp: 73c Fan: 44% Util: 98% Core:1875MHz Mem:6801MHz Bus:16
+Started: Mon Dec 08 20:11:15 2025
+Stopped: Mon Dec 08 20:11:23 2025
