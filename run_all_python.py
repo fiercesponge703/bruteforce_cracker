@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 run_all_python.py
 Запускает bruteforce_cracker.py по всем хэшам/уровням и собирает результаты в CSV.
@@ -9,7 +9,6 @@ run_all_python.py
 
 Запуск:
     python run_all_python.py --procs 12 --chunk 20000 --time-limit 60
-(укажите --time-limit если хотите ограничить время на каждый тест)
 """
 import csv
 import subprocess
@@ -19,7 +18,7 @@ import sys
 import os
 import re
 
-# Тестовые хэши (взятые из задания)
+
 TESTS = {
     'sha1': [
         ('легкий','7c4a8d09ca3762af61e59520943dc26494f8941b'),
@@ -47,7 +46,7 @@ TESTS = {
     ]
 }
 
-# PRESets keyspace: match previous message
+
 PRESETS = {
     'легкий':   {'charset':'0123456789','min':1,'max':6},
     'средний':  {'charset':'0123456789abcdefghijklmnopqrstuvwxyz','min':1,'max':6},
@@ -56,7 +55,7 @@ PRESETS = {
 }
 
 def parse_output(output):
-    # Попытка найти "FOUND" или "NOT FOUND" + attempts/elapsed
+
     s = output.replace('\r','\n')
     found = False
     pwd = ''
@@ -71,14 +70,14 @@ def parse_output(output):
         elapsed = float(m.group(3))
         hps = float(m.group(4))
         return found,pwd,attempts,elapsed,hps
-    # либо try to match NOT FOUND pattern
+  
     m2 = re.search(r'NOT FOUND.*attempts~(\d+).*elapsed=([0-9.]+)s\s+H/s~([0-9.]+)', s)
     if m2:
         attempts = int(m2.group(1))
         elapsed = float(m2.group(2))
         hps = float(m2.group(3))
         return False,'',attempts,elapsed,hps
-    # Fallback: попытаться найти attempts и elapsed
+
     m3 = re.search(r'attempts~(\d+).*elapsed=([0-9.]+)s', s)
     if m3:
         attempts = int(m3.group(1))
@@ -95,7 +94,7 @@ def run_one(alg, level_name, target_hash, args):
     if args.time_limit:
         cmd += f' --time-limit {args.time_limit}'
     print("RUN:", cmd)
-    # запускаем и захватываем stdout
+    
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     out_lines = []
     try:
@@ -133,7 +132,7 @@ def main():
         for level_name, target_hash in items:
             res = run_one(alg, level_name, target_hash, args)
             rows.append(res)
-            # optional: flush to CSV incrementally
+            
             with open(args.out, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 writer.writerow(['algorithm','level','target_hash','charset','min','max','found','password','attempts','elapsed','hps'])
