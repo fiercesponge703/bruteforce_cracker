@@ -1,19 +1,11 @@
-# autobench_windows.ps1
-# Запуск: в PowerShell
-#   cd C:\Users\fierce_sponge\Desktop\bruteforce_cracker
-#   .\autobench_windows.ps1
+$hashcatExe   = "DIRECTORY"
+$hashFilesDir = "DIRECTORY"
 
-# --- НАСТРОЙКИ ПУТЕЙ ---
-# Где лежит hashcat.exe
-$hashcatExe   = "C:\tools\hashcat\hashcat.exe"
-# Где лежат файлы с хэшами и run_all_python.py
-$hashFilesDir = "C:\Users\fierce_sponge\Desktop\bruteforce_cracker"
 
-# Нужно ли перед hashcat прогнать python-раннер
 $runPythonFirst = $false
 $pythonArgs     = "--procs 12 --chunk 20000 --time-limit 60 --timeout-per-test 300"
 
-# --- ПРОВЕРКИ ---
+
 if (-not (Test-Path $hashcatExe)) {
     Write-Host "hashcat.exe не найден по пути: $hashcatExe" -ForegroundColor Red
     exit 1
@@ -23,7 +15,7 @@ if (-not (Test-Path $hashFilesDir)) {
     exit 1
 }
 
-# --- ФУНКЦИЯ ЗАПУСКА HASHCAT ---
+
 function Run-Hashcat {
     param(
         [int]      $Mode,
@@ -49,7 +41,7 @@ function Run-Hashcat {
 
     Push-Location $hashcatDir
     try {
-        # Запускаем hashcat напрямую, всё, что он пишет (stdout+stderr), уходит в лог
+        
         & $hashcatExe -m $Mode -a 3 $hashFilePath @MaskArgs --status --status-timer=5 --potfile-disable 2>&1 |
             Out-File -FilePath $outLogPath -Encoding utf8
     }
@@ -58,12 +50,12 @@ function Run-Hashcat {
     }
 }
 
-# --- 1. (ОПЦИОНАЛЬНО) PYTHON-РАННЕР ---
+
 if ($runPythonFirst) {
     Write-Host "Запуск Python-раннера run_all_python.py..." -ForegroundColor Green
     Push-Location $hashFilesDir
     try {
-        # если venv активирован — достаточно 'python'
+       
         python .\run_all_python.py $pythonArgs.Split(' ')
     }
     catch {
@@ -77,7 +69,7 @@ if ($runPythonFirst) {
 Write-Host ""
 Write-Host "=== Серия тестов hashcat ===" -ForegroundColor Green
 
-# --- MD5 (mode 0) ---
+
 '''Run-Hashcat -Mode 0 -HashFileName "md5.txt"          -MaskArgs @("?d?d?d?d?d?d") `
             -OutLogName "hashcat_md5_easy.txt"
 
@@ -90,7 +82,7 @@ Run-Hashcat -Mode 0 -HashFileName "md5_hard.txt"     -MaskArgs @("-1","012345678
 Run-Hashcat -Mode 0 -HashFileName "md5_veryhard.txt" -MaskArgs @("-1","0123456789abcdefghijklmnopqrstuvwxyz","?1?1?1?1?1?1?1?1") `
             -OutLogName "hashcat_md5_veryhard.txt"
 
-# --- SHA1 (mode 100) ---
+
 Run-Hashcat -Mode 100 -HashFileName "sha1.txt"          -MaskArgs @("?d?d?d?d?d?d") `
             -OutLogName "hashcat_sha1_easy.txt"
 
@@ -103,7 +95,7 @@ Run-Hashcat -Mode 100 -HashFileName "sha1_hard.txt"     -MaskArgs @("-1","012345
 Run-Hashcat -Mode 100 -HashFileName "sha1_veryhard.txt" -MaskArgs @("-1","0123456789abcdefghijklmnopqrstuvwxyz","?1?1?1?1?1?1?1?1") `
             -OutLogName "hashcat_sha1_veryhard.txt"
 
-# --- bcrypt (mode 3200) ---
+
 Run-Hashcat -Mode 3200 -HashFileName "bcrypt.txt"          -MaskArgs @("?d?d?d?d?d?d") `
             -OutLogName "hashcat_bcrypt_easy.txt"
 
@@ -116,11 +108,7 @@ Run-Hashcat -Mode 3200 -HashFileName "bcrypt_hard.txt"     -MaskArgs @("-1","012
 Run-Hashcat -Mode 3200 -HashFileName "bcrypt_veryhard.txt" -MaskArgs @("-1","0123456789abcdefghijklmnopqrstuvwxyz","?1?1?1?1?1?1?1?1") `
             -OutLogName "hashcat_bcrypt_veryhard.txt"'''
 
-# --- Argon2id (mode надо проверить в своей сборке!) ---
-# В отдельном окне:
-#   cd C:\tools\hashcat
-#   .\hashcat.exe --help | Select-String -Pattern "argon"
-# Найди, какой mode указан для argon2id (часто 32000 или 32001/34000)
+
 $argonMode = 34000
 
 '''Run-Hashcat -Mode $argonMode -HashFileName "argon2.txt"          -MaskArgs @("?d?d?d?d?d?d") `
