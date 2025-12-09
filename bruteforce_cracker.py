@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 Optimized bruteforce_cracker.py без прямого использования модуля bcrypt.
 
@@ -21,11 +21,10 @@ from multiprocessing import cpu_count, Pool
 
 import os
 
-# Включаем чисто-питоновский backend bcrypt в passlib (иначе он по умолчанию отключен)
-# https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bcrypt.html
+
 os.environ.setdefault("PASSLIB_BUILTIN_BCRYPT", "enabled")
 
-# ----- backends -----
+
 HAS_PW_BCRYPT = True
 try:
     from passlib.hash import bcrypt as pw_bcrypt
@@ -41,7 +40,7 @@ except Exception:
     argon2_ex = None
 
 
-# ----- worker: проверяет список кандидатов -----
+
 def worker_check(args):
     candidates, target_hash, alg = args
     target_hash = target_hash.strip().lower()
@@ -64,7 +63,7 @@ def worker_check(args):
                 if pw_bcrypt.verify(s, target_hash):
                     return s
             except Exception:
-                # неверный формат, ошибка backend'a — просто пропускаем
+               
                 continue
 
     elif alg == 'argon2':
@@ -83,12 +82,12 @@ def worker_check(args):
     return None
 
 
-# ----- генерация кандидатов -----
+
 from itertools import islice
 
 
 def iter_chunks(it, chunk_size):
-    """Разбивает произвольный итератор на чанки по chunk_size элементов."""
+
     it = iter(it)
     while True:
         chunk = list(islice(it, chunk_size))
@@ -98,17 +97,14 @@ def iter_chunks(it, chunk_size):
 
 
 def product_strings(charset, length):
-    """Все строки заданной длины из указанного алфавита."""
+
     for tpl in itertools.product(charset, repeat=length):
         yield ''.join(tpl)
 
 
-# ----- основной bruteforce -----
+
 def brute_force(target_hash, alg, charset, min_len, max_len, procs, chunk_size, time_limit=None):
-    """
-    Полный перебор паролей в заданном keyspace.
-    Возвращает (found_password or None, attempts, elapsed_seconds).
-    """
+
     tstart = time.time()
     attempts = 0
 
@@ -116,16 +112,16 @@ def brute_force(target_hash, alg, charset, min_len, max_len, procs, chunk_size, 
         for L in range(min_len, max_len + 1):
             gen = product_strings(charset, L)
             for chunk in iter_chunks(gen, chunk_size):
-                # проверка лимита времени
+
                 if time_limit and (time.time() - tstart) > time_limit:
                     elapsed = time.time() - tstart
                     return None, attempts, elapsed
 
                 attempts += len(chunk)
 
-                # один вызов worker_check на один чанк
+
                 res = pool.apply_async(worker_check, ((chunk, target_hash, alg),))
-                found_res = res.get()  # ждём завершения обработки чанка
+                found_res = res.get()  
                 if found_res:
                     elapsed = time.time() - tstart
                     return found_res, attempts, elapsed
@@ -134,7 +130,7 @@ def brute_force(target_hash, alg, charset, min_len, max_len, procs, chunk_size, 
     return None, attempts, elapsed
 
 
-# ----- CLI -----
+
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument('--alg', choices=['md5', 'sha1', 'bcrypt', 'argon2'], required=True)
